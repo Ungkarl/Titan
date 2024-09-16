@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="./javascript/scripts.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" type="image/x-icon" href="./images/LogoPng.svg">
+    <title>TITAN - ENERGY</title>
+  </head>
+  <body>
+    <!--#region Preloader-->
+    <div class="preloader">
+      <div class="loader">
+        <span class="loader-text">loading</span>
+        <span class="load"></span>
+      </div>
+    </div>
+    <!--#endregion-->
+    
+    <!--#region Newsletter signup-->
+    <div class="signup-container">
+      <div class="form-container">
+        <div class="account-form-container">
+          <div class="account-form">
+            <div class="account-title">
+              <p>WANT THE GOOD STUFF?<br />Sign up for the newsletter.</p>
+            </div>
+            <form class="createForm">
+              <div class="input">
+                <input
+                  type="text"
+                  class="input-field"
+                  name="name"
+                  required
+                  maxlength="30"
+                />
+                <label class="input-label"
+                  >Full name
+                  <ion-icon
+                    class="name-valid"
+                    name="checkmark-circle-outline"
+                  ></ion-icon
+                  ><ion-icon
+                    class="name-invalid"
+                    name="close-circle-outline"
+                  ></ion-icon
+                ></label>
+              </div>
+              <div class="input">
+                <input type="text" class="input-field" name="email" required />
+                <label class="input-label"
+                  >Email
+                  <ion-icon
+                    class="email-valid"
+                    name="checkmark-circle-outline"
+                  ></ion-icon
+                  ><ion-icon
+                    class="email-invalid"
+                    name="close-circle-outline"
+                  ></ion-icon
+                ></label>
+              </div>
+
+              <div class="msg"></div>
+
+              <div class="create">
+                <input
+                  type="submit"
+                  class="send-button"
+                  name="submit"
+                  value="SIGN UP"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="complete">
+          <div class="circle-loader">
+            <div class="checkmark draw"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--#endregion-->
+    
+    <!--#region Navbar & burger-menu-->
+    <div class="header-container">
+      <header class="header">
+        <nav class="nav-bar">
+          <div class="nav-home nav-item home active-nav" id="navElement">
+            <a href="#home" class="a-tag">
+              <p>Home</p>
+            </a>
+          </div>
+
+          <div class="nav-flavours nav-item flavours" id="navElement">
+            <a href="#flavours" class="a-tag">
+              <p>Flavours</p>
+            </a>
+          </div>
+          <div class="nav-item" id="navElement">
+            <a href="#home" class="a-tag"
+              ><img src="./images/LogoPng.svg" alt=""
+            /></a>
+          </div>
+          <div class="nav-information nav-item information" id="navElement">
+            <a href="#information" class="a-tag">
+              <p>Information</p>
+            </a>
+          </div>
+
+          <div class="nav-stores nav-item stores" id="navElement">
+            <a href="#stores" class="a-tag">
+              <p>Stores</p>
+            </a>
+          </div>
+
+          <button class="burger-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+        </nav>
+      </header>
+    </div>
+    <div class="burger-menu">
+      <div class="burger-items">
+        <div class="burger-home active-nav home" id="navElement">
+          <a href="#home">
+            <p>Home</p>
+          </a>
+        </div>
+        <div class="burger-flavours flavours" id="navElement">
+          <a href="#flavours">
+            <p>Flavours</p>
+          </a>
+        </div>
+        <div class="burger-information information" id="navElement">
+          <a href="#information">
+            <p>information</p>
+          </a>
+        </div>
+
+        <div class="burger-stores stores" id="navElement">
+          <a href="#stores">
+            <p>stores</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--#endregion-->
+   
+    <!--#region Home section-->
+    <section id="home" class="home">
+      <div class="title">
+        <p>THE BEST</p>
+        <p>ENERGY DRINK</p>
+        <p>IN THE WORLD<a>.</a></p>
+      </div>
+      <div class="titan-img">
+        <div class="titan-ani bounce-in-top">
+          <img class="main-img-size" src="./images/hero.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--#endregion-->
+   
+    <!--#region quotes-container-->
+    <div class="quotes-container">
+      <h1>ENERGY TO</h1>
+      <h2 class="switching-text"></h2>
+      <p>
+        The globe yearns for fresh sources of energy,<br />
+        Fuel to transcend limitations,<br />
+        To shatter established norms,<br />
+        Surpass obstacles and liberate oneself.
+      </p>
+    </div>
+    <!--#endregion-->
+   
+    <!--#region Flavours section-->
+    <section id="flavours">
+      <div class="flavours-container">
+        <div class="modal-container">
+          <div class="modal">
+            <div class="close-modal">
+              <ion-icon name="add-outline" class="close-btn"></ion-icon>
+            </div>
+
+            <div class="modal-text">
+              <p></p>
+              <div class="modal-title"><p></p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="original2 modalData" id="0">
+                  <div class="titan-img">
+                    <div class="slider-img">
+                      <img
+                        class="main-img-size"
+                        src="./images/hero.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="flavour-text">
+                    <p>ORIGINAL</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="strawberry-background">
+                  <div class="strawberry2 modalData" id="1">
+                    <div class="titan-img">
+                      <div class="slider-img">
+                        <img
+                          class="main-img-size"
+                          src="./images/STRAWBERRY.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="flavour-text">
+                      <p>STRAWBERRY</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="apple2 modalData" id="2">
+                  <div class="titan-img">
+                    <div class="slider-img">
+                      <img
+                        class="main-img-size"
+                        src="./images/APPLE.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="flavour-text lax">
+                    <p>SOUR APPLE</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="original">
+          <div class="titan-img">
+            <div class="flavour-img">
+              <img class="main-img-size" src="./images/hero.png" alt="" />
+            </div>
+          </div>
+          <div class="flavour-text">
+            <p>ORIGINAL</p>
+            <p>Introducing: Titan Original</p>
+            <p>
+              Prepare yourself for an extraordinary energy drink experience that
+              will ignite your senses and unleash your inner titan like never
+              before with the revolutionary taste of Titan Original. This
+              original flavor creation has been meticulously crafted to deliver
+              a sensation that transcends the ordinary, taking your energy drink
+              journey to exhilarating new heights.
+            </p>
+          </div>
+        </div>
+
+        <div class="strawberry-background">
+          <div class="strawberry">
+            <div class="flavour-text">
+              <p>STRAWBERRY</p>
+              <p>Introducing: Titan Strawberry Surge</p>
+              <p>
+                With every sip of Titan Strawberry Surge, you'll be transported
+                to a sun-kissed strawberry field, where the aroma of ripe
+                berries fills the air. As the luscious liquid touches your lips,
+                a wave of delightful sweetness dances on your tongue,
+                captivating your taste buds with its fruity allure. It's a
+                tantalizing sensation that's both refreshing and invigorating.
+                Made in collaberation with Heroic.
+              </p>
+            </div>
+            <div class="titan-img">
+              <div class="flavour-img">
+                <img
+                  class="main-img-size"
+                  src="./images/STRAWBERRY.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="apple">
+          <div class="titan-img">
+            <div class="flavour-img">
+              <img class="main-img-size" src="./images/APPLE.png" alt="" />
+            </div>
+          </div>
+          <div class="flavour-text lax">
+            <p>SOUR APPLE</p>
+            <p>Introducing: Sour Apple Explosion</p>
+            <p>
+              Get ready to ignite your senses with the electrifying new flavor
+              of Titan energy drink: Sour Apple Explosion! We've taken the bold,
+              tangy essence of sour apples and infused it into every sip,
+              creating an explosion of taste that will leave you craving for
+              more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#endregion-->
+  
+    <!--#region Scrolling-text-->
+    <div class="scroll-text">
+      <div class="top-layer">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+      </div>
+      <div class="bgg-image"><p></p></div>
+    </div>
+    <!--#endregion-->
+
+    <!--#region Information section-->
+    <section id="information">
+      <div class="info-container">
+        <div>
+          <p>GOT QUESTIONS?</p>
+          <p>
+            Here at Titan, we totally get it!<br />
+            We know how crucial it is to deliver the juiciest tidbits of
+            information that truly matter to you. So instead of bombarding you
+            with a never-ending stream of pointless facts about our drink, we're
+            laser-focused on tackling the questions that keep popping up in your
+            mind.<br /><br />
+            We're all about serving up the good stuff, straight from the source!
+            .In our quest to make your life easier, we've crafted a delightful
+            way for you to discover the answers you're seeking. We've got you
+            covered! But hey, if you've still got a lingering question, don't
+            hesitate to reach out to our amazing support team at
+            support@teamtitan.com.
+          </p>
+        </div>
+      </div>
+      <div class="about-accordions">
+        <div class="accordion">
+          <div class="accordion-content">
+            <div class="accordion-label"><p>What do antioxidants do?</p></div>
+            <div class="accordion-text">
+              Our energy drink is packed with antioxidants that act like
+              superheroes, neutralizing harmful free radicals in your body. They
+              provide an extra boost of protection, keeping you feeling
+              refreshed and ready to conquer any challenge. Sip on our drink and
+              let the antioxidants work their magic!
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <div class="accordion-label">
+              <p>Why do you use sugar? Isn't it unhealthy?</p>
+            </div>
+            <div class="accordion-text">
+              Ah, the eternal sugar debate! We totally understand your concerns
+              about health. While we do include sugar, we're all about mindful
+              consumption. We carefully consider the amount, ensuring a balanced
+              blend that satisfies your taste buds without going overboard.
+              We've got your well-being in mind, always!
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <div class="accordion-label">
+              <p>What exactly do you mean by natural?</p>
+            </div>
+            <div class="accordion-text">
+              The quest for the true meaning of "natural"! We understand your
+              curiosity and the importance of clarity. When we say "natural,"
+              we're referring to ingredients that are sourced from nature,
+              without any artificial additives or synthetic substances. We're
+              all about keeping things pure.
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <div class="accordion-label">
+              <p>How does your energy drink provide hydration?</p>
+            </div>
+            <div class="accordion-text">
+              The art of hydration! We've got your thirst for knowledge covered.
+              Our energy drink not only powers you up but also keeps you
+              refreshed and well-hydrated. It contains a special blend of
+              hydrating ingredients and electrolytes to ensure you stay
+              refreshed and balanced throughout the day
+            </div>
+          </div>
+        </div>
+
+        <div class="about-img"><img src="./images/original.png" alt="" /></div>
+      </div>
+    </section>
+    <!--#endregion-->
+
+    <!--#region Stores section-->
+    <section id="stores">
+      <div class="stores-title">WHERE TO GET?</div>
+      <div class="stores-text">
+        When it comes to finding our incredible energy drink, we've made sure
+        it's within reach wherever your adventures take you. From the mighty
+        aisles of all the big stores to the bustling corners of your local
+        markets, we've got you covered.<br /><br />But wait, there's more! In
+        this digital age, convenience is just a click away. You can also find
+        our energizing elixir online, available at popular e-commerce platforms
+        that cater to your modern shopping preferences. With a few simple taps,
+        our energizing blend will be on its way to your doorstep, ready to fuel
+        your pursuits.
+      </div>
+      <div class="stores-loc">
+        <img src="./images/bilkalogo.png" alt="" />
+        <img src="./images/føtex.png" alt="" />
+        <img src="./images/circlek.png" alt="" />
+      </div>
+      <div class="stores-loc">
+        <img src="./images/netto-logo.png" alt="" />
+        <img src="./images/Rema1000.png" alt="" />
+        <img src="./images/coop.png" alt="" />
+      </div>
+    </section>
+    <!--#endregion-->
+
+    <!--#region footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col slogan">
+            <div class="footer-container">
+              <h5>
+                <span><span class="line">T</span>HIRSTY</span> FOR A BOOST OF
+                ENERGY?<br />
+                <span><span class="line">I</span>NSPIRING</span> ENERGY FOR
+                LIMITLESS POSSIBILITIES.<br />
+                EXPERIENCE AMAZING <span><span class="line">T</span>ASTE</span>,
+                ON ANOTHER LEVEL.<br />
+                OFFERING THE POWER OF
+                <span><span class="line">A</span>NTITOXIN</span>.<br />
+                ENERGIZE WITH THE ESSENCE OF
+                <span><span class="line">N</span>ATURE</span>.
+              </h5>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>online support</h4>
+
+            <ul>
+              <li>
+                <a class="newsletter">Tilmeld nyhedsbrev</a>
+              </li>
+              <li>
+                <a href="mailto:support@teamtitan.com">support@teamtitan.com</a>
+              </li>
+
+              <li><a href="tel:+4553562456">+45 5356 2456</a></li>
+
+              <li>
+                <a href="https://goo.gl/maps/RaUdWsmAQVSbqC7z7" target="_blank"
+                  >Skaldehøjvej 2, 8800 Viborg <br />
+                  Hovedekontor</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>follow us</h4>
+
+            <div class="social-links">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa fa-facebook-f"></i
+              ></a>
+
+              <a href="https://twitter.com/home" target="_blank"
+                ><i class="fa fa-twitter"></i
+              ></a>
+
+              <a
+                href="https://www.instagram.com/titan.energy.drink/"
+                target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </div>
+            <h4>Partners</h4>
+            <div class="partners">
+              <a href="#"><img src="./images/heroic.png" alt="" /></a>
+              <a href="#"
+                ><img src="./images/MicrosoftTeams-image (1).png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--#endregion-->
+  </body>
+</html>
